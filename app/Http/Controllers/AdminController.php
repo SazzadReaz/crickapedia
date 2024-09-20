@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 use App\Models\Stadium;
@@ -16,13 +15,13 @@ class AdminController extends Controller
         $total_sta = Stadium::count();
 
         $total_user = User::count();
-        
+
         $total_product = Product::count();
 
-        
+
         return view('admin/admindashboard2',compact('total_sta','total_user','total_product'));
 
-        
+
 
     }
 }
